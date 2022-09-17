@@ -2,48 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 <body>
+  <main>
+      <!-- Rating state start -->
+    <article class="rating-state">
+      <header class="rating-state-header">
+        <div class="star">
+          <img src="images/icon-star.svg" alt="icon-star" class="star-image"/>
+        </div>
+        <h1 class="how">How did we do?</h1>
+        <h2 class="please">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</h2>
+      </header>
+      <div class="form">  
+        <div class="rating-div">
+          <label for="one"><input type="radio" name="ratings" value="1" id="one"/>1</label>
+          <label for="two"><input type="radio" name="ratings" value="2" id="two"/>2</label>
+          <label for="three"><input type="radio" name="ratings" value="3" id="three"/>3</label>
+          <label for="four"><input type="radio" name="ratings" value="4" id="four"/>4</label>
+          <label for="five"><input type="radio" name="ratings" value="5" id="five"/>5</label>
+        </div>
+        <button>SUBMIT</button>
+      </div>
+    </article>
+     <!-- Rating state end -->
 
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
+      <!-- Thank you state start --> 
+    <article class="thankyou-state hide">
+      <img src="images/illustration-thank-you.svg" alt="illustration-thank-you" class="handset"/>
+      <div class="result">You selected <span></span> out of 5</div>
+      <h1 class="thank">Thank you!</h1>
+      <h2 class="appreciate">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</h2>
+    </article> 
+     <!-- Thank you state end --> 
+  </main>
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/traez" target="_blank">Trae Zeeofor</a>.
+  </footer>
+<script src="script.js"></script>
 </body>
 </html>
